@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Travel Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Travel Explorer</h1>
+    <p>Discover destinations, view photos, and check the weather</p>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <input id="searchInput" placeholder="Search city or destination (e.g. Paris, Tokyo)" />
+      <button id="searchBtn">Explore</button>
+    </section>
+
+    <section class="results">
+      <div class="left-panel">
+        <h2 id="destName">--</h2>
+        <p id="destSummary">Search a destination to see photos and weather.</p>
+
+        <div class="weather-card" id="weatherCard" hidden>
+          <h3>Weather</h3>
+          <div id="weatherInfo">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="photos" id="photos">
+          <!-- Photo thumbnails inserted here -->
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <h3>Popular Destinations</h3>
+        <ul id="popularList">
+          <li data-place="Paris">Paris</li>
+          <li data-place="New York">New York</li>
+          <li data-place="Tokyo">Tokyo</li>
+          <li data-place="Sydney">Sydney</li>
+          <li data-place="Cairo">Cairo</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Built with Unsplash & OpenWeatherMap (you must add your API keys)</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
